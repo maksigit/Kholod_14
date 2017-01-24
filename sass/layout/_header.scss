@@ -1,0 +1,128 @@
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+header {
+    background: url("../images/--image.png") no-repeat center/cover;
+    .container-header-top {
+        box-sizing: border-box;
+        max-width: 1140px;
+        border: 1px solid white;
+        margin: auto;
+        padding: 39px 0 0 0;
+
+        .wrap-logo {
+            .logo {
+                display: inline-block;
+                float: left;
+            }
+            .nav {
+                float: right;
+            }
+            .menu {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                li {
+                    float: left;
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        padding: 11px 20px;
+                        color: #e2e2e2;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: #ffac55;
+                        }
+                    }
+                }
+                .padrigth {
+                    padding-right: 55px;
+                }
+                .phone {
+                    padding-left: 20px;
+                    a{
+                        background: transparent url("../images/phone-icon.png") no-repeat 0 50%;
+                        padding: 8px 0 8px 30px;
+                        color: #ffffff;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 15px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+                }
+                li:last-child {
+                    padding-left: 20px;
+                    a{
+                        border-radius: 15px;
+                        padding: 15px;
+                        display: inline-block;
+                        background: #03b6e7 url("../images/email-icon.png") no-repeat 50% 45%;
+                    }
+                }
+            }
+            .menu-icon {
+                text-align: right;
+                display: none;
+            }
+            .menu-icon svg g {
+                fill: #e7434e
+            }
+
+            @media (max-width: 760px) {
+                .nav {
+                    position: absolute;
+                    top: 40px;
+                    margin: 0;
+                    float: right;
+                    width: 100%;
+                }
+                .menu-icon {
+                    display: block;
+                }
+                .menu li {
+                    float: none;
+                    background-color: rgba(0, 0, 0, .5);
+                }
+                .menu-icon svg {
+                    padding: 5px;
+                    box-sizing: content-box;
+                    &:hover {
+                        background-color: rgba(0, 0, 0, .5);
+                    }
+                }
+            }
+        }
+    }
+    .container-header-bottom {
+        box-sizing: border-box;
+        max-width: 1140px;
+        border: 1px solid white;
+        margin: auto;
+        padding: 161px 0 0 0;
+        h1 {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+    }
+}
