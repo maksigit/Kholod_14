@@ -8,7 +8,8 @@
 }
 
 header {
-    background: url("../images/--image.png") no-repeat center/cover;
+    background: url("../images/--image.png") no-repeat;
+    border: 1px solid;
     .container-header-top {
         box-sizing: border-box;
         max-width: 1140px;
@@ -74,10 +75,10 @@ header {
                 display: none;
             }
             .menu-icon svg g {
-                fill: #e7434e
+                fill: #e7434e;
             }
 
-            @media (max-width: 760px) {
+            @media (max-width: 1073px) {
                 .nav {
                     position: absolute;
                     top: 40px;
@@ -109,6 +110,7 @@ header {
         margin: auto;
         padding: 161px 0 0 0;
         h1 {
+            margin: 0;
             font-size: 16px;
             font-weight: 400;
             text-align: center;
@@ -123,6 +125,10 @@ header {
             color: #ffffff;
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
+        }
+        .flexslider {
+            background: transparent;
+            border: none;
         }
     }
 }
