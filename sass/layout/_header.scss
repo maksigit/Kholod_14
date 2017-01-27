@@ -9,8 +9,7 @@
 
 header {
     padding: 1px;
-    background: blueviolet url("../images/--image.png") no-repeat center/cover;
-
+    background: #152529 url("../images/--image.png") center/cover;
     .container-header {
         box-sizing: border-box;
         max-width: 1140px;
@@ -129,41 +128,46 @@ header {
         //=========
         //BEGIN
         //=========
-        .owl-carousel {
+        .slider-header {
             .owl-dots {
                 margin-top: 105px !important;
             }
-                .owl-dot {
-                    span {
-                        border: 2px solid white;
-                        background: none;
-                        &:hover {
-                            border: 2px solid #16d428;
-                        }
-                    }
-                }
-                .categ {
-                }
-                .categ-edu {
-                    padding: 141px;
-                    background: #03b6e7 url("../images/2-layers-1.png") no-repeat 50% 50%;
+            .owl-dot {
+                span {
+                    border: 2px solid white;
+                    background: none;
                     &:hover {
-                        background: #f6961b url("../images/2-layers-1.png") no-repeat 50% 50%;
+                        border: 2px solid #16d428;
                     }
                 }
-                .categ-busin {
-                    padding: 141px;
-                    background: #03b6e7 url("../images/2-layers-2.png") no-repeat 50% 50%;
-                    &:hover {
-                        background: #f6961b url("../images/2-layers-2.png") no-repeat 50% 50%;
-                    }
+            }
+            .active {
+                span {
+                    background: #16d428 !important;
                 }
-                //.tech {
-                //    background: url("../../images/2-layers-3.png") no-repeat 50% 50%;
-                //}
-                //.bank {
-                //    background: url("../../images/2-layers-4.png") no-repeat 50% 50%;
-                //}
+            }
+            .categ {
+            }
+            .categ-edu {
+                padding: 141px;
+                background: #03b6e7 url("../images/2-layers-1.png") no-repeat 50% 50%;
+                &:hover {
+                    background: #f6961b url("../images/2-layers-1.png") no-repeat 50% 50%;
+                }
+            }
+            .categ-busin {
+                padding: 141px;
+                background: #03b6e7 url("../images/2-layers-2.png") no-repeat 50% 50%;
+                &:hover {
+                    background: #f6961b url("../images/2-layers-2.png") no-repeat 50% 50%;
+                }
+            }
+            //.tech {
+            //    background: url("../../images/2-layers-3.png") no-repeat 50% 50%;
+            //}
+            //.bank {
+            //    background: url("../../images/2-layers-4.png") no-repeat 50% 50%;
+            //}
 
         }
         //=========

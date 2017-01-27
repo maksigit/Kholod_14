@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.slider-header').owlCarousel({
         loop:true,
         margin:10,
         responsiveClass:true,
@@ -24,20 +24,46 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slider-about').owlCarousel({
         loop:true,
-        margin:10,
+        margin:60,
         responsiveClass:true,
         responsive:{
             0:{
                 items:2,
-                nav:false
+                nav:true,
+                dots: false
             },
             600:{
                 items:4,
-                nav:false
+                nav:true,
+                dots: false
             },
             1000:{
                 items:5,
                 nav:true,
+                loop:false,
+                dots: false
+            }
+        }
+    })
+
+});
+$(document).ready(function(){
+    $('.slider-projects').owlCarousel({
+        loop:true,
+        // margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:1,
+                nav:false
+            },
+            1000:{
+                items:1,
+                nav:false,
                 loop:false
             }
         }
