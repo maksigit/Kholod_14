@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <div class="container-header">
+    <div class="container-header" id="nav-header">
         <div class="wrap-logo clearfix">
             <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
             <div class="container-bar clearfix">
@@ -20,12 +20,12 @@
                         class="blue">R</span></a>
                 <nav>
                     <ul class="nav clearfix">
-                        <li><a href="" class="active">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">industry </a></li>
-                        <li><a href="">services</a></li>
-                        <li><a href="">pages</a></li>
-                        <li class="padrigth"><a href="">Contact Us</a></li>
+                        <li><a href="#nav-header" class="active">Home</a></li>
+                        <li><a href="#nav-about">About us</a></li>
+                        <li><a href="#nav-our">industry </a></li>
+                        <li><a href="#nav-services">services</a></li>
+                        <li><a href="#nav-blog">pages</a></li>
+                        <li class="padrigth"><a href="#nav-quick">Contact Us</a></li>
                         <li class="phone"><a href="">+9978 8856 999</a></li>
                         <li><a href=""></a></li>
                     </ul>
@@ -34,7 +34,6 @@
         </div>
         <h1>We are leading consulting company</h1>
         <h2>Choose your industry</h2>
-
         <div class="owl-carousel owl-theme slider-header">
             <div><a href="#"><img src="images/3-layers.png"></a></div>
             <div><a href="#"><img src="images/3-layers-2.png"></a></div>
@@ -52,7 +51,7 @@
     </div>
 </header>
 <main>
-    <div class="container-about">
+    <div class="container-about" id="nav-about">
         <p class="title-top">About us</p>
         <p class="title-middle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -60,6 +59,7 @@
         <div class="button">
             <a href="#">Read More</a>
         </div>
+        <div class="owl-slider-about">
         <div class="owl-carousel owl-theme slider-about">
             <div class="hover"><a href="#"><img src="images/about-us-logo-1.png"></a></div>
             <div><a href="#"><img src="images/about-us-logo-2.png"></a></div>
@@ -72,9 +72,10 @@
             <div><a href="#"><img src="images/about-us-logo-4.png"></a></div>
             <div><a href="#"><img src="images/about-us-logo-5.png"></a></div>
         </div>
+        </div>
     </div>
     <div class="main-our">
-        <div class="container-our">
+        <div class="container-our" id="nav-our">
             <p class="title-top">our features</p>
             <div class="wrap-item">
                 <div class="item-lt">
@@ -111,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="container-projects">
+    <div class="container-projects" id="nav-project">
         <p class="title-top">Projects</p>
         <div class="wrap-projects">
             <div class="projects-lt">
@@ -129,12 +130,14 @@
             </div>
             <div class="projects-rt">
                 <div class="projects-rt-top">
-                    <div class="owl-carousel owl-theme slider-projects">
-                        <div><img src="images/layer-69.png"></div>
-                        <div><img src="images/layer-69.png"></div>
-                        <div><img src="images/layer-69.png"></div>
+                    <div class="button-projects">
+                        <a href="#">Banking</a>
                     </div>
-                    <!--<img src="images/layer-69.png">-->
+                    <div class="owl-carousel owl-theme slider-projects">
+                        <div><img src="images/2-layers-69.png"></div>
+                        <div><img src="images/2-layers-69.png"></div>
+                        <div><img src="images/2-layers-69.png"></div>
+                    </div>
                 </div>
                 <div class="projects-rt-bottom">
                     <p class="title-top">Project Heading</p>
@@ -148,9 +151,9 @@
             <a href="#">Full Projects</a>
         </div>
     </div>
-    <div class="main-services">
+    <div class="main-services" id="nav-services">
         <div class="container-services">
-            <p class="title-top">Projects</p>
+            <p class="title-top">Services</p>
             <div class="wrap-item-services">
                 <div class="item business">
                     <p class="title-top"><a href="#">business consultation</a></p>
@@ -192,7 +195,7 @@
             <p class="title-middle">Designation</p>
         </div>
     </div>
-    <div class="main-our-blog">
+    <div class="main-our-blog" id="nav-blog">
         <div class="container-blog">
             <p class="title-top">Our Blog</p>
             <div class="wrap-item-blog">
@@ -222,7 +225,7 @@
             </div>
         </div>
     </div>
-    <div class="container-quick">
+    <div class="container-quick" id="nav-quick">
         <p class="title-top">Quick contact</p>
         <div class="container-fluid">
             <div class="row">
@@ -273,12 +276,12 @@
                 <div class="col-md-2 col-md-offset-2">
                     <p class="title-top">navigation</p>
                     <ul class="">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">industry</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">pages</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#nav-header">Home</a></li>
+                        <li><a href="#nav-about">about us</a></li>
+                        <li><a href="#nav-our">industry</a></li>
+                        <li><a href="#nav-services">services</a></li>
+                        <li><a href="#nav-blog">pages</a></li>
+                        <li><a href="#nav-quick">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 ">
@@ -300,14 +303,10 @@
                     <form action="" class=" clearfix">
                         <input name="emailaddress" placeholder="Email Addres" class="textbox"
                                type="email" required/>
-                        <!--<textarea rows="1" name="text" placeholder="" class="message"-->
-                        <!--required></textarea>-->
                         <div class="button">
                             <a href="#">Subscribe</a>
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
@@ -327,6 +326,7 @@
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
+<script src="js/bar.js.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/app.js"></script>

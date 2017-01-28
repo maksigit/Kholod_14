@@ -28,13 +28,19 @@ $(document).ready(function(){
         responsiveClass:true,
         responsive:{
             0:{
+                items:1,
+                nav:true,
+                dots: false
+            },
+            400:{
                 items:2,
                 nav:true,
                 dots: false
             },
-            600:{
+            700:{
                 items:4,
                 nav:true,
+
                 dots: false
             },
             1000:{

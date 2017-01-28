@@ -10,7 +10,6 @@
 .container-about {
     box-sizing: border-box;
     max-width: 1140px;
-    border: 1px solid;
     margin: auto;
     padding: 94px 0 96px;
     .title-middle {
@@ -27,48 +26,48 @@
         width: 100%;
         background-color: #e7eff1;
     }
-    .slider-about {
-        padding: 0 67px 0;
-        position: relative;
-        margin-top: 57px;
-        .hover {
-            &:hover {
-                background: url("../images/logo-1.png") no-repeat 50% 50%;
-            }
-        }
-        .owl-nav {
-            position: absolute;
-            top:0;
-            width: 100%;
-            .owl-prev {
-                position: absolute;
-                left: -70px;
-                top:-15px;
-                color: transparent;
-                margin: 0;
-                padding: 6px;
-                background: transparent url("../images/about-us-left-arrow.png") no-repeat 50% 50%;
+    .owl-slider-about {
+        padding: 0 64px 0;
+        .slider-about {
+            position: relative;
+            margin-top: 57px;
+            .hover {
                 &:hover {
-                background: url("../images/about-us-left-arrow-active.png") no-repeat 50% 50%;
-                    cursor: pointer;
+                    background: url("../images/logo-1.png") no-repeat 50% 50%;
                 }
             }
-            .owl-next {
+            .owl-nav {
                 position: absolute;
-                right: 65px;
-                top: -14px;
-                color: transparent;
-                margin: 0;
-                padding: 6px;
-                background: transparent url("../images/about-us-right-arrow.png") no-repeat 50% 50%;
-                &:hover {
-                    background: url("../images/about-us-right-arrow-active.png") no-repeat 50% 50%;
-                    cursor: pointer;
+                top: 0;
+                width: 100%;
+                .owl-prev {
+                    position: absolute;
+                    left: -60px;
+                    top: -15px;
+                    color: transparent;
+                    margin: 0;
+                    padding: 6px;
+                    background: transparent url("../images/about-us-left-arrow.png") no-repeat 50% 50%;
+                    &:hover {
+                        background: url("../images/about-us-left-arrow-active.png") no-repeat 50% 50%;
+                        cursor: pointer;
+                    }
+                }
+                .owl-next {
+                    position: absolute;
+                    right: -60px;
+                    top: -14px;
+                    color: transparent;
+                    margin: 0;
+                    padding: 6px;
+                    background: transparent url("../images/about-us-right-arrow.png") no-repeat 50% 50%;
+                    &:hover {
+                        background: url("../images/about-us-right-arrow-active.png") no-repeat 50% 50%;
+                        cursor: pointer;
+                    }
                 }
             }
         }
-
-
     }
 }
 
@@ -77,7 +76,6 @@
     .container-our {
         box-sizing: border-box;
         max-width: 1140px;
-        border: 1px solid;
         margin: auto;
         padding-top: 92px;
         .wrap-item {
@@ -87,8 +85,6 @@
             align-items: center;
             .item-lt {
                 max-width: 450px;
-                //float: left;
-                border: 1px solid;
                 .item {
                     padding-right: 68px;
                     .title-top {
@@ -113,13 +109,10 @@
             .item-cnt {
                 width: 130px;
                 height: 130px;
-                border: 1px solid;
                 background: url("../images/2-layers.png") no-repeat 50% 50%;
             }
             .item-rt {
                 max-width: 450px;
-                //float: right;
-                border: 1px solid;
                 .item {
                     padding-left: 68px;
                     .title-top {
@@ -168,17 +161,14 @@
 .container-projects {
     box-sizing: border-box;
     max-width: 1140px;
-    border: 1px solid;
     margin: auto;
     padding: 94px 0 93px;
     .wrap-projects {
         margin: 34px 0 45px;
         display: flex;
         justify-content: space-between;
-        border: 1px solid;
         .projects-lt {
             max-width: 358px;
-            border: 1px solid;
             .projects-lt-top {
                 position: relative;
                 img {
@@ -200,14 +190,55 @@
         }
         .projects-rt {
             max-width: 749px;
-            border: 1px solid;
+
             .projects-rt-top {
-                img {
-                    max-width: 100%;
+                position: relative;
+                .button-projects {
+                    z-index: 2;
+                }
+                .slider-projects {
+                    position: relative;
+                    z-index: 1;
+                    .owl-dots {
+                        position: absolute;
+                        right: 20px;
+                        bottom: 10px;
+                        .owl-dot {
+                            span {
+                                width: 16px;
+                                height: 16px;
+                                background: transparent;
+                                border: 2px solid #ffffff;
+                                &:hover {
+                                    border: 2px solid #16d428;
+                                }
+                            }
+                        }
+                        .active {
+                            span {
+                                border: 2px solid #16d428;
+                                //background: #16d428;
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    border: 2px solid #16d428;
+                                    margin: 4px;
+                                    border-radius: 2px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+            @media (min-width: 320px) and (max-width: 750px) {
+                .projects-rt-top {
+                    display: none;
+                }
+            }
+
             .projects-rt-bottom {
-                padding: 38px 108px 55px 29px;
+                padding: 38px 106px 55px 29px;
+                border: 1px solid #dae5e8;;
                 .title-top {
                     text-align: left;
                     font-size: 18px;
@@ -229,7 +260,6 @@
     .container-services {
         box-sizing: border-box;
         max-width: 1140px;
-        border: 1px solid;
         margin: auto;
         padding: 96px 0 92px;
         .wrap-item-services {
@@ -239,7 +269,6 @@
             .item {
                 padding-top: 65px;
                 max-width: 324px;
-                border: 1px solid;
                 .title-top {
                     text-align: left;
                     font-size: 18px;
@@ -279,7 +308,6 @@
     .container-testi {
         box-sizing: border-box;
         max-width: 1140px;
-        border: 1px solid;
         margin: auto;
         padding: 95px 0 92px;
         .title-top {
@@ -329,7 +357,6 @@
     .container-blog {
         box-sizing: border-box;
         max-width: 1140px;
-        border: 1px solid;
         margin: auto;
         padding: 94px 0 94px;
         .wrap-item-blog {
@@ -387,7 +414,6 @@
 .container-quick {
     box-sizing: border-box;
     max-width: 1140px;
-    border: 1px solid;
     margin: auto;
     padding: 95px 0 100px;
     .container-fluid {
